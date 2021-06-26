@@ -1,0 +1,240 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- corona_intro:
+    use_entities: true
+- corona_spread:
+    use_entities: true
+- corona_food_spread:
+    use_entities: true
+- warm_weather:
+    use_entities: true
+- high_risk:
+    use_entities: true
+- corona_symptoms:
+    use_entities: true
+- helpline_numbers:
+    use_entities: true
+- corona_state:
+    use_entities: true
+- types_of_corona:
+    use_entities: true
+- vaccines:
+    use_entities: true
+- sputnik:
+    use_entities: true
+- sinovac:
+    use_entities: true
+- covishield:
+    use_entities: true
+- pfizer:
+    use_entities: true
+- moderna:
+    use_entities: true
+- covaxin:
+    use_entities: true
+- bengal_graph:
+    use_entities: true
+- gujarat_graph:
+    use_entities: true
+- maharashtra_graph:
+    use_entities: true
+- vaccine_slot:
+    use_entities: true
+entities:
+- state
+slots: {}
+responses:
+  utter_types_of_corona:
+  - text: |+
+      There are different corona strains found in various parts of the world-
+      When a virus is widely circulating in a population and causing many 
+      infections,the likelihood of the virus mutating increases. 
+      The more opportunities a virus has to spread, the more it 
+      replicates – and the more opportunities it has to undergo changes.
+      |
+      ALPHA: In December, British researchers discovered that a new variant was sweeping through their country. 
+      When it arrived in other countries, the variant, now known as Alpha, tended to become more common in its 
+      new homes as well. By April, it had become the dominant variant in the United States, and it has remained 
+      so ever since.
+      |
+      BETA: Seychelles, which has vaccinated a greater proportion of its people than any other nation, 
+      said genetic sequencing of samples shows that the so-called Beta variant, first discovered in South 
+      Africa last year, is behind a surge in cases.
+      |
+      GAMMA: A mutation in the Gamma variant (P1) of coronavirus is linked to increased mortality, 
+      a Harvard T.H. Chan School of Public Health and MIT researchers said on Wednesday.
+      The mutation also carries greater transmissibility, higher infection rates, and increased 
+      pathogenicity, showed the study detailed in the journal Genetic Epidemiology.
+      The findings were based on genome-wide association studies (GWAS) methodology, which 
+      analysed whole-genome sequencing data of SARS-CoV-2 mutations and COVID-19 mortality data. 
+      In September 2020, the team looked for links between each mutation of the SARS-CoV-2 virus's 
+      single-stranded RNA and mortality in 7,548 COVID-19 patients in Brazil.
+      The researchers found one mutation—at locus 25,088bp in the virus's genome—that alters the spike protein 
+      and was linked to a significant increase in mortality in COVID-19 patients. The team flagged the variant
+      with this mutation, which was later identified as part of P1.
+      |
+      DELTA: After creating widespead mahyem in India for almost 2 months
+      delta variant is proven to be very dangerous. as there are also
+      vaccination drives are going on, infections are less but the 
+      India variant also called as delta variant has already killed 3.9 million people.
+
+  utter_vaccines:
+  - text: |-
+      There are various vaccines present at the moments they are
+      1) Covishield 
+      2) Covaxin
+      3) Pfizer BioNtech
+      4) Moderna
+      5) Sinovac
+      6) Sputnik V
+  utter_sinovac:
+  - text: |-
+      Made in China
+      Made by Sinopharm
+      Efficacy is 56-65%
+      side effetcs are -
+      1) Fatigue
+      2) Muscle Pain
+      3) chills
+  utter_covaxin:
+  - text: |-
+      Made in India
+      Made by Bharat Biotech
+      efficacy 77.8% (after phase 3 trial)
+      side effetcs are -
+      1) Fever
+      2) Headache
+      3) Irritability
+  utter_covishield:
+  - text: |-
+      Made by Astrazeneca
+      Made in India
+      Efficacy is 70-75% (after 10-12 weeks of gap)
+      side effetcts are - 
+      1) Pain or tenderness at the injection site
+      2) Nausea
+      3) Fever
+      4) chills
+      5) tiredness
+      6) Muscle or joint pain
+  utter_pfizer:
+  - text: |-
+      Made by Pfizer BioNtech
+      Made in United States
+      Efficacy is 95%
+      side effects are -
+      1) Fever
+      2) chills
+      3) muscle pain
+      4) tiredness
+      Specifically after the second dose of pfizer people sees side effetcs
+  utter_moderna:
+  - text: |-
+      Made by Moderna
+      Made in  United States
+      Efficacy is 92%
+      side effects are -
+      1) Fever
+      2) chiils
+      3) tiredness
+      4) headache
+  utter_sputnik:
+  - text: |-
+      Made by Gamaliya Institute
+      Made in Russia
+      Efficacy is 91.6%
+      side effetcs of sputnik v -
+      1) Fever 
+      2) chills
+      3) Fatigue
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/o4GrK77.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, programmed by Ishan, Biswadeep, Sourav and Aniket.
+  utter_corona_intro:
+  - image: https://i.imgur.com/zbPCpEB.png?1
+    text: Coronaviruses are a group of related viruses that cause diseases in mammals and birds. In humans, coronaviruses cause respiratory tract infections that can be mild, such as some cases of the common cold (among other possible causes, predominantly rhinoviruses), and others that can be more fatal, such as SARS and COVID-19.
+  utter_corona_spread:
+  - text: |-
+      This virus was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person. It’s important to note that person-to-person spread can happen on a continuum. Some viruses are highly contagious (like measles), while other viruses are less so. The virus that causes COVID-19 is spreading from person-to-person and it is even Air Borne virus as well. Someone who is actively sick with COVID-19 can spread the illness to others. That is why we recommend that these patients be isolated either in the hospital or at home (depending on how sick they are) until they are better and no longer pose a risk of infecting others.
+      How long someone is actively sick can vary so the decision on when to release someone from isolation is made on a case-by-case basis in consultation with doctors, infection prevention and control experts, and public health officials and involves considering specifics of each situation including disease severity, illness signs and symptoms, and results of laboratory testing for that patient.
+      The virus that causes COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in some affected geographic areas. Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected.
+  utter_corona_food_spread:
+  - text: Coronaviruses are generally thought to be spread from person-to-person through respiratory droplets and it is also air borne according to WHO. Before preparing or eating food it is important to always wash your hands with soap and water for 20 seconds for general food safety. Throughout the day wash your hands after blowing your nose, coughing or sneezing, or going to the bathroom.
+  utter_warm_weather:
+  - text: It is not yet known whether weather and temperature impact the spread of COVID-19. Some other viruses, like the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  At this time, it is not known whether the spread of COVID-19 will decrease when weather becomes warmer.  There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.
+  utter_high_risk:
+  - text: Older adults and people of any age who have serious underlying medical conditions may be at higher risk for more serious complications from COVID-19. These people who may be at higher risk of getting very sick from this illness, includes; Older adults, People who have serious underlying medical conditions like... Heart disease, Diabetes, Lung disease. But there are some new strains which is effecting younger adults and children as well.
+  utter_corona_symptoms:
+  - text: |-
+      Most common symptoms include;
+      1) fever
+      2) dry cough
+      3) tiredness
+      Less common symptoms include
+      1) aches and pain
+      2) sore throat
+      3) diarrhoea
+      4) conjunctivitis
+      5) headache
+      6) loss of taste or smell
+      7) a rash on skin, or discolouration of fingers or toes.
+      Serious symptoms include
+      1) difficulty breathing or shortness of breath
+      2) chest pain or pressure and
+      3) loss of speech or movement.
+      Seek immediate medical attention if you have serious symptoms.
+      Always call before visiting your doctor or health facility.
+      People with mild symptoms who are otherwise healthy should manage their symptoms at home.
+      On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.
+  utter_helpline_numbers:
+  - text: |-
+      National Helpline number Call :1921
+      for more help visit https://www.mygov.in/covid-19/
+  utter_bengal_graph:
+  - image: https://i.imgur.com/eW4xtyo.png?1
+    text: graph of bengal
+  utter_gujarat_graph:
+  - image: https://i.imgur.com/xW8xFQ8.png?1
+    text: graph of gujarat
+  utter_maharashtra_graph:
+  - image: https://i.imgur.com/j1rSpa1.png?1
+    text: graph of maharashtra
+  utter_vaccine_slot:
+  - text: |-
+      The slot can be booked using an app called Arogyasetu or Co-Win both. Details regarding all the vaccines are available there.
+      you may visit following links for vaccination drive
+      1) https://www.aarogyasetu.gov.in/
+      2) https://www.cowin.gov.in/home
+actions:
+- action_corona_tracker
+forms: {}
+e2e_actions: []
